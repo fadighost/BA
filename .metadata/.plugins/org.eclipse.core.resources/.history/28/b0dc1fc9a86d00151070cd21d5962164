@@ -1,0 +1,22 @@
+import intel.rssdk.PXCMCapture;
+import intel.rssdk.pxcmStatus;
+import intel.rssdk.PXCMSenseManager;
+
+class MyHandler implements PXCMSenseManager.Handler
+{
+   public pxcmStatus OnNewSample(int mid, PXCMCapture.Sample sample)
+   {
+       // return NO ERROR to continue, or
+       // any ERROR to exit the loop
+       return pxcmStatus.PXCM_STATUS_NO_ERROR;
+   }
+};
+ 
+
+// Initialize my event handler
+MyHandler handler=new MyHandler();
+ 
+// Stream depth samples
+sm.Init(handler);
+sm.StreamFrames(true);
+sm.Close();

@@ -1,0 +1,28 @@
+class MyHandler implements PXCMHandConfiguration.GestureHandler {
+public:
+ 
+   void OnFiredGesture(PXCMHandData.GestureData data) {
+       // handle gestures
+       if (data.name.compareTo(“tap”)==0) {
+           // handle the tap gesture
+           …
+       } else if (data.name.compareTo(“wave”)==0) {
+           // handle the wave gesture
+         …
+       }
+   }
+};
+ 
+// handModule is a PXCMHandModule instance
+// Subscribe to the gesture notification event
+PXCMHandConfiguration handConfig=handModule.CreateActiveConfiguration();
+MyHandler handler=new MyHandler();
+handConfig.SubscribeGesture(handler);
+handConfig.ApplyChanges();
+ 
+// streaming & receiving gestures
+...
+ 
+// Clean up
+handConfig.UnsubscribeGesture(handler);
+handConfig.close()

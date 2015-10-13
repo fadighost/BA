@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.Texture"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.Graphics.DisplayMode"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.realsense.PXCHandModule"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.realsense.PXCHandConfiguration"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.realsense.PXCHandData"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.glutils.ShapeRenderer"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.maps.Map"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.realsense.PXCHandData.AlertType"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.realsense.PXCHandData.IHand"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.realsense.PXCHandData.AccessOrderType"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.math.Vector2"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.Color"/>
+<fullyQualifiedTypeName name="java.awt.Component"/>
+<fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+<fullyQualifiedTypeName name="intel.rssdk.pxcmStatus"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMCapture"/>
+<fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandData.IContour"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandData.IHand"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandData"/>
+<fullyQualifiedTypeName name="PXCMHandConfiguration.GestureHandler"/>
+<fullyQualifiedTypeName name="GestureData"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandData.AlertType"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandData.TrackingModeType"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandConfiguration"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMVideoModule"/>
+<fullyQualifiedTypeName name="java.util.EnumSet"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMCaptureManager.Handler"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandData.GestureStateType"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandData.JointData"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandConfiguration.GestureHandler"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandData.JointType"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandData.AccessOrderType"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandData.GestureData"/>
+<fullyQualifiedTypeName name="intel.rssdk.PXCMHandData.BodySideType"/>
+</qualifiedTypeNameHistroy>

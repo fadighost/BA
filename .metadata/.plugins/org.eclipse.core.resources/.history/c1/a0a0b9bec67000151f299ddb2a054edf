@@ -1,0 +1,105 @@
+import intel.rssdk.PXCMBase;
+import intel.rssdk.PXCMCapture;
+import intel.rssdk.PXCMFaceModule;
+import intel.rssdk.PXCMHandData;
+import intel.rssdk.PXCMSenseManager;
+import intel.rssdk.pxcmStatus;
+
+public class CameraViewer
+{    
+	public MainWindow()
+    {
+        InitializeComponent();
+
+        InitRealSense();
+        InitTouchlessController();
+        InitGestures();
+    }
+
+    private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+    {
+        DisposeRealSense();
+    }
+
+    public void InitRealSense()
+    {
+        // Create a SenseManager instance.
+        sm = PXCMSenseManager.CreateInstance();
+        // Enable the touchless controller feature.
+        sm.EnableTouchlessController();
+        // Enable hand tracking
+        sm.EnableHand();
+    // Enable face tracking
+        sm.EnableFace();
+        // Get a face instance here for configuration
+        PXCMFaceModule face = sm.QueryFace();
+        // Initialize
+        PXCMSenseManager.Handler handler = new PXCMSenseManager.Handler
+        {
+            onModuleProcessedFrame = OnModuleProcessedFrame
+        };
+
+        sm.Init(handler);
+
+        // Get a hand instance here for configuration
+        hand = sm.QueryHand();
+        hcfg = hand.CreateActiveConfiguration();
+    }
+
+    pxcmStatus OnModuleProcessedFrame(int mid, PXCMBase module, PXCMCapture.Sample sample)
+    {
+        // check if the callback is from the face tracking module.
+        if (mid == PXCMFaceModule.CUID)
+        {
+            PXCMFaceModule face = module.QueryInstance<PXCMFaceModule>();
+	// do something
+        }
+        // return NO_ERROR to continue, or any error to abort.
+        return pxcmStatus.PXCM_STATUS_NO_ERROR;
+    }
+
+
+    public void InitGestures()
+    {
+        hcfg.DisableAllGestures();
+        hcfg.EnableGesture("wave");
+        hcfg.SubscribeGesture(OnFiredGesture);
+        hcfg.ApplyChanges();
+    }
+
+    void OnFiredGesture(PXCMHandData.GestureData data) {
+        // do something
+    }
+
+    public void InitTouchlessController() {
+        // Get the module instance 
+        PXCMTouchlessController tc = sm.QueryTouchlessController();
+        // register for the ux events
+        tc.SubscribeEvent(OnFiredUXEvent);
+
+        // start processing thread
+        processingThread = new Thread(new ThreadStart(ProcessingThread));
+        processingThread.SetApartmentState(ApartmentState.STA);
+        processingThread.Start();
+
+    }
+
+    public void DisposeRealSense() {
+        hand.Dispose();
+        hcfg.Dispose();
+        // Clean up
+        processingThread.Abort();
+        // close session manager
+        sm.Dispose();
+        
+    }
+
+    private void ProcessingThread()
+    {
+        // Streaming data
+        while (sm.AcquireFrame(true) >= pxcmStatus.PXCM_STATUS_NO_ERROR)
+        {
+            sm.ReleaseFrame();
+        }
+    }
+}

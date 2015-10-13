@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;realsense.java&apos; to &apos;PXCMSenseManager.java&apos;&#x0D;&#x0A;- Original project: &apos;Realsense&apos;&#x0D;&#x0A;- Original element: &apos;realsense.java&apos;&#x0D;&#x0A;- Renamed element: &apos;PXCMSenseManager.java&apos;" description="Rename compilation unit &apos;realsense.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{realsense.java" name="PXCMSenseManager.java" references="false" stamp="1440395546482" version="1.0"/>
+</session>

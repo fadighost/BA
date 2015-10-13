@@ -1,0 +1,45 @@
+import intel.rssdk.PXCMBase;
+import intel.rssdk.PXCMCapture;
+import intel.rssdk.PXCMCapture.Device;
+import intel.rssdk.PXCMCapture.Sample;
+import intel.rssdk.pxcmStatus;
+import intel.rssdk.PXCMSenseManager;
+
+class MyHandler implements PXCMSenseManager.Handler
+{
+   public pxcmStatus OnNewSample(int mid, PXCMCapture.Sample sample)
+   {
+       // return NO ERROR to continue, or
+       // any ERROR to exit the loop
+       return pxcmStatus.PXCM_STATUS_NO_ERROR;
+   }
+};
+ 
+
+// Initialize my event handler
+MyHandler handler=new MyHandler();
+@Override
+public pxcmStatus OnConnect(Device arg0, boolean arg1) {
+	// TODO Auto-generated method stub
+	return null;
+}
+@Override
+public pxcmStatus OnModuleProcessedFrame(int arg0, PXCMBase arg1, Sample arg2) {
+	// TODO Auto-generated method stub
+	return null;
+}
+@Override
+public pxcmStatus OnModuleSetProfile(int arg0, PXCMBase arg1) {
+	// TODO Auto-generated method stub
+	return null;
+}
+@Override
+public void OnStatus(int arg0, pxcmStatus arg1) {
+	// TODO Auto-generated method stub
+	
+}
+ 
+// Stream depth samples
+senseMgr.Init(handler);
+sm.StreamFrames(true);
+sm.Close();

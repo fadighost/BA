@@ -1,0 +1,9 @@
+import intel.rssdk.PXCMHandData.GestureStateType;
+
+class GestureData {
+   long             timeStamp;
+   int              handId;
+   GestureStateType state;
+   int              frameNumber;
+   String           name;
+};

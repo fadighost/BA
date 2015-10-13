@@ -1,0 +1,8 @@
+
+public interface PXCMHandConfiguration {
+
+	public interface GestureHandler {
+
+	}
+
+}

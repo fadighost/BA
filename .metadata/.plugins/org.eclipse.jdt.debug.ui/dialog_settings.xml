@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\Users\PC\Desktop\FF_HandsViewer" key="JavaClasspathTab.LAST_PATH_SETTING"/>
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=RealSenseTest-desktop/C:\/Users\/PC\/.gradle\/caches\/modules-2\/files-2.1\/org.lwjgl.lwjgl\/lwjgl_util\/2.9.2\/4b9e37300a87799856e0bd15ed81663cdb6b0947\/lwjgl_util-2.9.2.jar&amp;lt;org.lwjgl.util.mapped(CacheLineSize.class[CacheLineSize&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=RealSenseTest-desktop/C:\/Users\/PC\/.gradle\/caches\/modules-2\/files-2.1\/org.lwjgl.lwjgl\/lwjgl_util\/2.9.2\/4b9e37300a87799856e0bd15ed81663cdb6b0947\/lwjgl_util-2.9.2.jar&amp;lt;org.lwjgl.util(XPMFile.class[XPMFile&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=HandsViewer/Main&amp;lt;{HandsViewer.java[HandsViewer&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=RealSenseTest-core/C:\/Users\/PC\/Desktop\/lwjgl\/jar\/lwjgl.jar&amp;lt;org.lwjgl(Sys.class[Sys&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=HandsViewer1/src&amp;lt;{CameraViewer.java[CameraViewer&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=RealSenseTest-desktop/C:\/Users\/PC\/.gradle\/caches\/modules-2\/files-2.1\/com.badlogicgames.gdx\/gdx\/1.7.0\/1b08c96132448b5ab9c0cc8dea3e985dcf0166fd\/gdx-1.7.0.jar&amp;lt;com.badlogic.gdx.utils(GdxBuild.class[GdxBuild&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=RealSenseTest-core/C:\/Users\/PC\/Desktop\/lwjgl_util-2.0rc2.jar&amp;lt;org.lwjgl.util(XPMFile.class[XPMFile&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=RealSenseTest-desktop/src&amp;lt;com.badlogic.realsense.desktop{DesktopLauncher.java[DesktopLauncher&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="340" key="DIALOG_X_ORIGIN"/>
+			<item value="187" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item value="500" key="SashWeightTree"/>
+		<item value="500" key="SashWeightDetails"/>
+		<item value="614" key="WIDTH"/>
+		<item value="194" key="HEIGHT"/>
+	</section>
+	<section name="org.eclipse.jdt.debug.ui.RUNTIME_CLASSPATH_ADVANCED_DIALOG">
+		<item value="228" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="281" key="DIALOG_HEIGHT"/>
+		<item value="253" key="DIALOG_X_ORIGIN"/>
+		<item value="164" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
